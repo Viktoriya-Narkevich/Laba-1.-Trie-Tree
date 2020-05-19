@@ -21,12 +21,15 @@ type
     BBuildTrie: TButton;
     treeView: TTreeView;
     Memo1: TMemo;
+    BExit: TButton;
+    Label2: TLabel;
     procedure BOpenFileClick(Sender: TObject);
     procedure BSaveFileClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure BBuildTrieClick(Sender: TObject);
     procedure BFindClick(Sender: TObject);
+    procedure BExitClick(Sender: TObject);
 
 
   private
@@ -86,6 +89,7 @@ begin
   while popLastWordReversed(input, word) do
     tree.push(word);
   tree.print(treeView);
+  
 end;
 
 function TForm1.getInput:string;
@@ -140,6 +144,11 @@ begin
   if Trim(s) <> '' then
     for i := Length(s) downto 1 do
       Result := Result + s[i];
+end;
+
+procedure TForm1.BExitClick(Sender: TObject);
+begin
+  Close;
 end;
 
 end.

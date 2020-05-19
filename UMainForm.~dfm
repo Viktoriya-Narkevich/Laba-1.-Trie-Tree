@@ -1,8 +1,9 @@
 object Form1: TForm1
   Left = 338
   Top = 207
-  Width = 1080
-  Height = 497
+  Width = 969
+  Height = 424
+  AutoSize = True
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,8 +16,8 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 14
   object Label1: TLabel
-    Left = 384
-    Top = 64
+    Left = 336
+    Top = 8
     Width = 87
     Height = 31
     Caption = #1044#1077#1088#1077#1074#1086
@@ -28,8 +29,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 824
-    Top = 56
+    Left = 776
+    Top = 0
     Width = 116
     Height = 31
     Caption = #1056#1077#1079#1091#1083#1100#1090#1072#1090
@@ -40,9 +41,22 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
   end
+  object Label2: TLabel
+    Left = 536
+    Top = 72
+    Width = 167
+    Height = 24
+    Caption = #1042#1074#1077#1076#1080' '#1086#1082#1086#1085#1095#1072#1085#1080#1077
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object BFind: TButton
-    Left = 608
-    Top = 208
+    Left = 584
+    Top = 152
     Width = 81
     Height = 41
     Caption = #1055#1086#1080#1089#1082
@@ -50,15 +64,15 @@ object Form1: TForm1
     OnClick = BFindClick
   end
   object Edit1: TEdit
-    Left = 592
-    Top = 168
+    Left = 560
+    Top = 112
     Width = 121
     Height = 22
     TabOrder = 1
   end
   object Memo1: TMemo
-    Left = 48
-    Top = 96
+    Left = 0
+    Top = 40
     Width = 233
     Height = 257
     Lines.Strings = (
@@ -66,8 +80,8 @@ object Form1: TForm1
     TabOrder = 2
   end
   object Memo2: TMemo
-    Left = 752
-    Top = 88
+    Left = 704
+    Top = 32
     Width = 249
     Height = 257
     Lines.Strings = (
@@ -75,8 +89,8 @@ object Form1: TForm1
     TabOrder = 3
   end
   object BOpenFile: TButton
-    Left = 104
-    Top = 400
+    Left = 56
+    Top = 344
     Width = 129
     Height = 41
     Caption = #1054#1090#1082#1088#1099#1090#1100' '#1092#1072#1081#1083
@@ -84,8 +98,8 @@ object Form1: TForm1
     OnClick = BOpenFileClick
   end
   object BSaveFile: TButton
-    Left = 824
-    Top = 392
+    Left = 776
+    Top = 336
     Width = 129
     Height = 41
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1092#1072#1081#1083
@@ -93,8 +107,8 @@ object Form1: TForm1
     OnClick = BSaveFileClick
   end
   object BBuildTrie: TButton
-    Left = 368
-    Top = 400
+    Left = 320
+    Top = 344
     Width = 129
     Height = 41
     Caption = #1055#1086#1089#1090#1088#1086#1080#1090#1100' '#1076#1077#1088#1077#1074#1086
@@ -102,12 +116,21 @@ object Form1: TForm1
     OnClick = BBuildTrieClick
   end
   object treeView: TTreeView
-    Left = 304
-    Top = 96
+    Left = 256
+    Top = 40
     Width = 281
     Height = 257
     Indent = 19
     TabOrder = 7
+  end
+  object BExit: TButton
+    Left = 584
+    Top = 216
+    Width = 81
+    Height = 41
+    Caption = #1042#1099#1093#1086#1076
+    TabOrder = 8
+    OnClick = BExitClick
   end
   object OpenDialog1: TOpenDialog
     Left = 32
